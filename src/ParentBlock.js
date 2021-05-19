@@ -1,18 +1,12 @@
+import Small from "./Small.js"
+import Large from "./Large.js"
+const number = 48
+const isSmall = number < 50
 function ParentBlock(){
-   const number = 48
-   const isSmall = number < 50
-   return
-      isSmall?<Small /> : <Large />  
-}
-function Small (){
-   return(
-   <div>Small</div>
-   );
+
+   return <div>
+      {isSmall?<Small /> : <Large />} 
+       </div>
 }
 
-function Large() {
-   return (
-      <div>Large</div>
-   );
-}
 export default ParentBlock
